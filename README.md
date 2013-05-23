@@ -12,9 +12,9 @@ Sliderise works on elements with any number of children inside them.
 
 ```html
 <div id="my-slider">
-<img src="slide1.png"/>
-<img src="slide2.png"/>
-<img src="slide3.png"/>
+	<img src="slide1.png"/>
+	<img src="slide2.png"/>
+	<img src="slide3.png"/>
 </div>
 ```
 
@@ -22,24 +22,24 @@ Those child elements can also have any structure inside of them.
 
 ```html
 <div id="my-slider">
-<div>
-<img src="slide1.png"/>
-<p>This is my first slide</p>
-</div>
-<div>
-<img src="slide2.png"/>
-<p>This is my second slide</p>
-</div>
-<div>
-<img src="slide3.png"/>
-<p>This is my third slide</p>
-</div>
+	<div>
+		<img src="slide1.png"/>
+		<p>This is my first slide</p>
+	</div>
+	<div>
+		<img src="slide2.png"/>
+		<p>This is my second slide</p>
+	</div>
+	<div>
+		<img src="slide3.png"/>
+		<p>This is my third slide</p>
+	</div>
 </div>
 ```
 
 How the slides are styled, ordered or laid out is completely up to you. You can even have different elements as the first children of the containing div.
 
-The slider adjust its own size automatically based on the size of your slides (make sure they're the same size).
+The slider adjust its own size automatically based on the size of your largest slide.
 
 Still, it's a good idea to avoid altering style attributes that are intrinsic to the operation of the slider, such as 'display' and 'position'. Sliderise may not work as expected if you change these attributes.
 
@@ -49,7 +49,7 @@ Link to sliderise.jquery.js, and then you can use it like so:
 
 ```javascript
 $(document).ready(function(){
-$('#your-slider-id').sliderise();
+	$('#your-slider-id').sliderise();
 });
 ```
 
