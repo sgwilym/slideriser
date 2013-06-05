@@ -19,7 +19,7 @@
 	    var slideHeight = [];
 	    var slid = 0;
 	    var slides = [];
-	    var controls = '<img class="left control" src="http://www.icty.org/js/easybox/prevbtn-light.png"/><img class="right control" src="http://www.icty.org/js/easybox/nextbtn-light.png"/>';
+	    var controls = '<img class="left control" src="img/arrow_left-passive.svg"/><img class="right control" src="img/arrow_right-passive.svg"/>';
 	    var leftArrPos;
 	    var rightArrPos;
 	    
@@ -36,8 +36,8 @@
 	    function attachControls(){
 		    setTimeout(function(){slider.children('.left').bind('click', goLeft);}, 500);
         setTimeout(function(){slider.children('.right').bind('click', goRight);}, 500);
-        slider.find('.left').hover(function(){$(this).attr('src', 'http://icty.org/js/easybox/prevbtn.png')}, function(){$(this).attr('src', 'http://icty.org/js/easybox/prevbtn-light.png')});
-        slider.find('.right').hover(function(){$(this).attr('src', 'http://icty.org/js/easybox/nextbtn.png')}, function(){$(this).attr('src', 'http://icty.org/js/easybox/nextbtn-light.png')});
+        slider.find('.left').hover(function(){$(this).attr('src', 'img/arrow_left-active.svg')}, function(){$(this).attr('src', 'img/arrow_left-passive.svg')});
+        slider.find('.right').hover(function(){$(this).attr('src', 'img/arrow_right-active.svg')}, function(){$(this).attr('src', 'img/arrow_right-passive.svg')});
 	    }
 	    
 	    function detachControls(){
