@@ -1,6 +1,6 @@
 # Slideriser
 
-A jQuery plugin that turns any container into a slider, with all its first children as slides. Pronounced 𐑕𐑤𐑲𐑛𐑻𐑲𐑟𐑝.
+A jQuery plugin that turns any container into a slider, with all its first children as slides. Pronounced 𐑕𐑤𐑲𐑛𐑻𐑲𐑟𐑻.
 
 ## A very informal and simple guide
 
@@ -38,7 +38,7 @@ Those child elements can also have any structure inside of them.
 
 How the slides are styled, ordered or laid out is completely up to you. You can even have different elements as the first children of the containing div.
 
-The slider adjust its own size automatically based on the size of your largest slide.
+The slider adjusts its own size automatically based on the size of your largest slide.
 
 Still, it's a good idea to avoid altering style attributes that are intrinsic to the operation of the slider, such as 'display' and 'position'. Sliderise may not work as expected if you change these attributes.
 
@@ -80,5 +80,5 @@ By default, arrows will appear on the left and right sides of the slider, vertic
 $('#my-slider').sliderise(left: lPosition, right: rPosition);
 ```
     
-where lPosition and rPosition can be 'top', 'middle', 'bottom', or css enclosed in curly brackets, e.g {'left': '100px', 'top': 10px'}.
+where lPosition and rPosition can be 'top', 'middle', 'bottom', or css enclosed in curly brackets, e.g {'left': '100px', 'top': '10px'}.
 
